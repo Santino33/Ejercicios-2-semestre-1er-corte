@@ -464,6 +464,20 @@ public class Student {
         return repetitions;
     }
 
+    //Metodo que verifique si dadas 2 palabras, la segunda es igual al termino de la primera
+    public boolean stringEnding(String str, String ending) {
+        String tempWord = "";
+        boolean exit = false;
+
+        for(int i =str.length() - ending.length() ; i < str.length(); i++){
+            tempWord += str.charAt(i);
+        }
+        if(tempWord.equals(ending))
+            exit = true;
+
+        return exit;
+    }
+
 
 
 }

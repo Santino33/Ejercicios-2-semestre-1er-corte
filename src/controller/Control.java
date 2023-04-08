@@ -1,6 +1,5 @@
 package controller;
 
-import model.Course;
 import model.Date;
 import model.Student;
 import view.IoManager;
@@ -13,7 +12,6 @@ public class Control {
     //Atributos
     private IoManager io;
     Student student = new Student();
-    Course course = new Course();
     //Contructor
 
         public Control(){
@@ -114,6 +112,7 @@ public class Control {
 
             //io.showMessage("El numero double es: "+student.stringToDouble("-238"));
 
+            io.showMessage("String ending: " + student.stringEnding("celular", "ular"));
         }
 
 
